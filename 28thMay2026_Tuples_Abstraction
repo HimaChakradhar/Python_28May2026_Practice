@@ -1,0 +1,183 @@
+28thMay
+====
+==============================
+28thMay2026
+=============
+Abstraction
+
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+  @abstractmethod
+  def sound(self):
+    pass    #do nothing
+
+class Dog(Animal):
+  def sound(self):
+    print("Dog is barking")
+
+d=Dog()
+d.sound()
+
+
+================
+Tuples
+=============
+
+a tuple is a collection used to store muliple values 
+
+t= (1,2,3) 
+
+-> Tuple allows duplicates 
+-> Immutable 
+
+Immutable : Once tuple is created, we can not change values
+
+When to use Tuple :
+   Fixed configuration
+   coordinates 
+ 
+Tuples vs Sets 
+===============
+tuple - ordered 
+set - unordered 
+
+tuple packing 
+===========
+person = "Chakri", 30, "India"
+print(person)
+print(type(person))
+
+unpacking
+============
+
+person1 = ("Chakri", 40 , "india")
+name, age , country = person1
+
+print(name)
+
+index
+=====
+#index
+t= (10,20,30)
+print(t.index(20))
+
+Count
+======
+#Count method
+
+t= (1,2,3,4,3,4,5)
+print(t.count(4))
+
+swap
+====
+a=10 
+b=20
+
+a,b = b,a
+print(b)
+
+
+Tuple Comprehension
+=====================
+result =[]
+for i in range(10):
+  result.append(i*i)
+
+print(result)
+t = tuple(result)
+
+
+t= tuple(i*i for i in range(10))
+print(t)
+
+===============
+#range 
+t = tuple (range(1,21))
+print(t)
+
+===================
+#convert lit to tuple
+data = [1,2,3,4]
+t = tuple(data)
+print(t)
+===================
+numbers = (10,20,30,40,50)
+print(numbers[1:4])
+print(max(numbers))
+print(min(numbers))
+print(sum(numbers))
+============================
+number = (10,20,30,40)
+print(20 in number)
+print(100 in number)
+====================
+t= ("babu",) * 100
+print(t)
+===================
+t1 = (1,2)
+t2= (3,4)
+
+result = t1+t2
+print(result)
+=================
+t = (5,)
+print(type(t))
+====================
+a=10 
+b=20
+
+a,b = b,a
+print(b)
+==================
+t = tuple(range(100))
+print(t)
+
+for i in range(5):
+  print(i)
+====================
+colors = ("Red", "Blue", "Green")
+
+for c in colors:
+  print(c)
+
+print(len(colors))
+========================
+person1 = ("Chakri", 40 , "india")
+name, age , country = person1
+
+print(name)
+==============================
+person = "Chakri", 30, "India"
+print(person)
+print(type(person))
+==========================
+
+t = (1,2,3)
+
+print(t)
+
+student = ("Babu", 101, "Python")
+
+print(student[1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
