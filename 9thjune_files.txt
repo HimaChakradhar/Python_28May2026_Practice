@@ -1,0 +1,31 @@
+File : 
+name = "Chakri"
+
+File operations :
+
+1. create file
+2. Write file
+3. Read file
+4. Append File 
+
+Creating and Writing the file
+======================================
+file = open("log.txt","w")
+file.write("Application started, We are learning about file")
+file.close()
+
+Read file
+===============
+file = open("log.txt", "r")
+content = file.read()
+print(content)
+file.close()
+
+Read() vs readline() vs readlines()
+
+Read() -> entire file
+readline() - > oneline 
+readlines() -> entire file line by line and returns list 
+
+
+
